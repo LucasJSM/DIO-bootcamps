@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+
+  --heavy-black-background: rgb(59, 59, 59);
+  --font-lineThrough: rgb(218, 208, 208);
+}
+
+body {
+  background-color: var(--heavy-black-background);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 1.8rem;
+  margin: 8rem auto;
+}
+
+.border {
+  border: 0.2rem solid white;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+
+  padding: 2rem;
+  margin-inline: auto;
+  width: 45rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.16rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.12rem;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+form:nth-child(2) {
+  margin-inline: 1.2rem;
+}
+
+input[type=text] {
+  padding: 1.6rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 1.2rem;
+}
+
+button {
+  background-color: white;
+  color: var(--heavy-black-background);
+
+  border-radius: 1.9rem;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  margin: 1.2rem;
+
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(209, 205, 205);
+  transition: background 300ms;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(159, 156, 156);
+}
+
+div.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  font-size: 1.8rem;
+  padding: 2.2rem;
+
+  width: 8rem;
+  overflow: visible;
+}
+
+div.list label {
+  display: flex;
+  flex-direction: row-reverse;
+
+  justify-content: center;
+  justify-items: center;
+
+  align-items: center;
+  align-content: center;
+
+  cursor: pointer;
+}
+
+div.list label input[type="checkbox"] {
+  margin-inline: 0.9rem;
+}
+
+.item, 
+div.item {
+  display: flex;
+  flex-direction: row;
+
+  color: var(--font-lineThrough);
+}
+
+.item > * {
+  padding-inline: 0.8rem;
+  justify-self: center;
+  align-self: center;
+}
+
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+  color: grey;
+}
