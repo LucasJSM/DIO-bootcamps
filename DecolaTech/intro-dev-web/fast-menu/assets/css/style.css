@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+
+  background-color: skyblue;
+  color: white;
+}
+
+.res table {
+  margin-block: 3rem;
+  font-size: 1.3rem;
+}
+
+.res table tr, .res table td {
+  padding-block: 0.7rem;
+  padding-inline: 1.5rem;
+}
+
+tr td:first-child {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main h1 {
+  align-self: center;
+}
+
+.container-bar {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+
+  padding-block: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+
+  margin-block: 1.4rem;
+  padding-block: 2rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+}
+
+form label {
+  font-weight: bolder;
+  letter-spacing: 0.3rem;
+}
+
+input[type*="text"].input-cep {
+  border: none;
+  border-radius: 10rem;
+
+  padding: 0.5rem;
+  
+  width: 25vw;
+  height: 2rem;
+
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button.consultar {
+  border: none;
+  border-radius: 10rem;
+
+  padding: 0.7rem;
+
+  font-weight: 400;
+
+  background-color: white;
+  box-shadow: 1px 2px 10px 1px #aaa;
+}
+
+button.consultar:hover {
+  filter: opacity(90%);
+}
+
+button.consultar:active {
+  box-shadow: none;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link name="text/css" rel="stylesheet" href="./assets/css/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link name="text/css" rel="stylesheet" href="./assets/css/style.css" />
+    <title>Verifique seu CEP</title>
+  </head>
+  <body>
+
+    <main>
+      <h1>Consulte seu CEP</h1>
+
+      <div class="container-bar barra-progresso">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <form action="GET">
+          <label for="inputCEP">CEP: </label>
+          <input type="text" name="cep" class="input-cep" id="inputCEP" value="cep" placeholder="Insira o CEP..." />
+          <button type="button" class="consultar" id="consultarCEP" value="consulta">Consultar</button>
+        </form>
+    
+        <div class="res" id="res"></div>
+      </div>
+
+    </main>
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+  </body>
+</html>
