@@ -10,8 +10,10 @@ import {
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Feather } from "@expo/vector-icons/";
+import Card from './components/Card';
 
 const avatarGitHub = "https://avatars.githubusercontent.com/u/82908776?v=4";
+
 const darkColorGitHub = "#0a0c10";
 const grayColorGitHub = "#42414d";
 const lightColorGitHub = "#f0f3f6";
@@ -86,39 +88,24 @@ const App = () => {
             </View>
           </View>
 
-          <View style={[styles.card]}>
-            <View style={[styles.card_header]}>
-              <Text style={[styles.defaultText, styles.card_title]}>
-                Experiência profissional
-              </Text>
-            </View>
-            <View style={[styles.card_content]}>
-              <Text style={[styles.defaultText, styles.card_content_text]}>
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum
-              </Text>
-            </View>
-          </View>
+          <Card title="Formação Acadêmica">
+            <Text style={[styles.defaultText, styles.card_content_text]}>Santa Mônica Centro Educacional</Text>
+            <Text style={[styles.defaultText, styles.card_content_text]}>UNIRIO</Text>
+            <Text style={[styles.defaultText, styles.card_content_text]}>Digital Innovation One</Text>
+          </Card>
 
-          <View style={[styles.card]}>
-            <View style={[styles.card_header]}>
-              <Text style={[styles.defaultText, styles.card_title]}>
-                Formação acadêmica
-              </Text>
-            </View>
-            <View style={[styles.card_content]}>
-              <Text style={[styles.defaultText, styles.card_content_text]}>
-                Santa Mônica Centro Educacional
-              </Text>
-              <Text style={[styles.defaultText, styles.card_content_text]}>
-                UNIRIO
-              </Text>
-              <Text style={[styles.defaultText, styles.card_content_text]}>
-                Digital Innovation One
-              </Text>
-            </View>
-          </View>
+          <Card title="Experiência Profissional">
+            <Text style={[styles.defaultText, styles.card_content_text]}>
+              Buscando primeira oportunidade no mercado de trabalho
+            </Text>
+          </Card>
+
+          <Card title="Idiomas">
+            <Text style={[styles.defaultText, styles.card_content_text]}>Português Fluente</Text>
+            <Text style={[styles.defaultText, styles.card_content_text]}>Inglês Intermediário</Text>
+            <Text style={[styles.defaultText, styles.card_content_text]}>Espanhol Básico</Text>
+          </Card>
+
         </View>
       </SafeAreaView>
     </>
@@ -185,39 +172,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
 
-  card: {
-    backgroundColor: lightColorGitHub,
-    width: "90%",
-    padding: 20,
-    marginBottom: 25,
-    borderRadius: 4,
-    borderWidth: 2,
-    borderColor: greenColorGitHub,
-    borderStyle: "solid",
-  },
-
-  card_header: {
-    borderStyle: "dashed",
-    borderBottomWidth: 3,
-    borderColor: greenColorGitHub,
-  },
-
-  card_title: {
-    color: darkColorGitHub,
-    marginBottom: 10,
-    fontWeight: "bold",
-    fontSize: 22,
-    marginBottom: 15,
-  },
-
-  card_content: {
-    marginTop: 15,
-  },
-
   card_content_text: {
     color: darkColorGitHub,
-    fontSize: 18,
-    lineHeight: 25,
+    fontSize: 20,
     textAlign: "justify",
     padding: 5,
   },
