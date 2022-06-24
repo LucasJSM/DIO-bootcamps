@@ -1,4 +1,5 @@
 import React from "react";
+import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
   Text,
@@ -33,7 +34,9 @@ const App = () => {
       <StatusBar
         backgroundColor={backgroundColorGitHub}
         barStyle="light-content"
+        style="auto"
       />
+
       <View style={styles.content}>
         <Image
           source={{ uri: imageProfileGitHub }}
