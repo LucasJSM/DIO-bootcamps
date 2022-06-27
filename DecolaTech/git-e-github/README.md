@@ -1,5 +1,7 @@
 # Comandos básicos do git
 
+Conceitos, explicações e comandos básicos para uso do Git/GitHub com base nas aulas da Digital Innovation One
+
 ## Comandos iniciais
  - git init
    * Iniciar repositório na pasta

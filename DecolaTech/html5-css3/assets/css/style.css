@@ -33,16 +33,20 @@ header.main-header {
   background: var(--smooth-black);
 }
 
+header.main-header h1 {
+  width: 10rem
+}
+
 .perfil {
   width: 100px;
   height: 100px;
-
+  transform: translateX(-21%);
   border-radius: 50%;
 }
 
 p.social-media a {
   color: var(--primary-color);
-
+  font-size: 1.8rem;
   text-decoration: none;
   font-weight: bolder;
 }
