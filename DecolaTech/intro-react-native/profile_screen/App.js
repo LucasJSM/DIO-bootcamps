@@ -6,8 +6,7 @@ import {
   Image,
   View,
   SafeAreaView,
-  StatusBar,
-  Pressable,
+  TouchableOpacity,
   Linking,
 } from "react-native";
 
@@ -68,13 +67,13 @@ const App = () => {
         >
           www.linkedin.com/in/lucasdjsm
         </Text>
-        <Pressable onPress={linkingToGitHubOnPress}>
+        <TouchableOpacity onPress={linkingToGitHubOnPress}>
           <View style={[styles.button]}>
             <Text style={[styles.defaultText, styles.buttonGitHubText]}>
               Open GitHub
             </Text>
           </View>
-        </Pressable>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
